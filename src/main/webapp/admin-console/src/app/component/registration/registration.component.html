@@ -1,0 +1,65 @@
+<h3>Create User</h3>
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <div style="width: 400px;">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="form-control"  data-toggle="tooltip"
+                 data-placement="right" title="Enter Name" [(ngModel)]="user.name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" name="surname" class="form-control" data-toggle="tooltip"
+                 data-placement="right" title="Enter Surname" [(ngModel)]="user.surname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="login">Login</label>
+          <input type="text" id="login" name="login" class="form-control" data-toggle="tooltip"
+                 data-placement="right" title="Enter Login" [(ngModel)]="user.login" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="form-control" data-toggle="tooltip"
+                 data-placement="right" title="Enter Password" [(ngModel)]="user.password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="about">About</label>
+          <input type="text" id="about" name="about" class="form-control" data-toggle="tooltip"
+                 data-placement="right" title="Enter About" [(ngModel)]="user.about">
+        </div>
+
+        <div class="form-group">
+          <label for="dateOfBirth">Date of birth</label>
+          <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" data-toggle="tooltip"
+                 data-placement="right" title="Enter date of birth" [(ngModel)]="user.dateOfBirth" required>
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" class="form-control" data-toggle="tooltip"
+                 data-placement="right" title="Enter City" [(ngModel)]="user.address.city" required>
+        </div>
+
+        <div class="form-group">
+          <label for="street">Street</label>
+          <input type="text" id="street" name="street" class="form-control" data-toggle="tooltip"
+                 data-placement="right" title="Enter Surname" [(ngModel)]="user.address.street" required>
+        </div>
+
+        <div class="form-group">
+          <label for="streetNumber">Street number</label>
+          <input type="text" id="streetNumber" name="streetNumber" class="form-control" data-toggle="tooltip"
+                 data-placement="right" title="Enter Surname" [(ngModel)]="user.address.streetNumber" required>
+        </div>
+
+        <button type="submit" class="btn btn-success" (click)="registerUser()">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
